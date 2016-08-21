@@ -16,3 +16,17 @@ include_recipe "#{cookbook_name}::atom"
 include_recipe "#{cookbook_name}::chrome"
 include_recipe "#{cookbook_name}::kvm"
 include_recipe "#{cookbook_name}::slack"
+
+%w(
+  htop
+  hexchat
+  sysstat
+  gparted
+  vim
+  virt-manager
+  samba
+).each do |pkg|
+  package pkg do
+    action :install
+  end
+end
