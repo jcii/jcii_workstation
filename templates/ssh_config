@@ -1,0 +1,4 @@
+Host *.marchex.com
+  IdentityFile ~/.ssh/jciimarchex.pem
+  User jcarter
+  IdentitiesOnly yes

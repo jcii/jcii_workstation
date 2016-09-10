@@ -25,6 +25,12 @@ include_recipe "#{cookbook_name}::slack"
   vim
   virt-manager
   samba
+  npm
+  ruby
+  ruby-bundler
+  ruby-dev
+  build-essential
+  vlc
 ).each do |pkg|
   package pkg do
     action :install
