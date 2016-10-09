@@ -31,6 +31,7 @@ include_recipe "#{cookbook_name}::slack"
   ruby-dev
   build-essential
   vlc
+  pgadmin3
 ).each do |pkg|
   package pkg do
     action :install

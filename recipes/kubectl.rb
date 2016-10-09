@@ -20,3 +20,4 @@
 # minikube start --vm-driver=kvm
 # eval $(minikube docker-env)
 # docker ps
+# eval $(minikube docker-env)
